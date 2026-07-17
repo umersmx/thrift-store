@@ -1,0 +1,8 @@
+{
+  "name": "DNA Thrift — Premium Streetwear",
+  "description": "Discover premium streetwear designed for those who dare to stand out. Limited drops. Unlimited attitude.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

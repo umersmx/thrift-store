@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --ink-color: #111111;
+  --offwhite-color: #F3F3F3;
+  --bg-color: #ffffff;
+  --fg-color: #111111;
+  --card-color: #ffffff;
+  --border-color: rgba(17, 17, 17, 0.1);
+}
+
+:root[data-theme="dark"] {
+  --ink-color: #F5F5F7;
+  --offwhite-color: #16161e;
+  --bg-color: #0c0c0e;
+  --fg-color: #E2E8F0;
+  --card-color: #16161e;
+  --border-color: rgba(255, 255, 255, 0.15);
+}
+
+@theme {
+  --color-ink: var(--ink-color);
+  --color-offwhite: var(--offwhite-color);
+  --color-background: var(--bg-color);
+  --color-foreground: var(--fg-color);
+  --color-card: var(--card-color);
+  --color-border: var(--border-color);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Transition theme changes smoothly */
+body, header, nav, footer, section, button, a, h1, h2, h3, h4, span, p, input {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Hide scrollbar for horizontal scroll containers */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Smooth image rendering */
+img {
+  image-rendering: auto;
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--ink-color);
+  color: var(--bg-color);
+}
+
+/* Infinite Marquee Rolling Animation */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-scroll {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 22s linear infinite;
+}
+
+.animate-marquee-scroll:hover {
+  animation-play-state: paused;
+}

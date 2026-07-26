@@ -7,6 +7,9 @@
   </p>
 
   <p>
+    <a href="https://dnathrift.vercel.app" target="_blank">
+      <img src="https://img.shields.io/badge/🌐_Live_Demo-dnathrift.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+    </a>
     <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-16.2-black?style=for-the-badge&logo=next.js" alt="Next.js 16" /></a>
     <a href="https://react.dev"><img src="https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19" /></a>
     <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind_CSS-v4.0-06B6D4?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS v4" /></a>
@@ -15,11 +18,11 @@
   </p>
 
   <p>
+    <a href="https://dnathrift.vercel.app">🌐 Live Demo</a> •
     <a href="#-getting-started">Getting Started</a> •
     <a href="#-key-features">Features</a> •
     <a href="#-tech-stack">Tech Stack</a> •
-    <a href="#-project-structure">Structure</a> •
-    <a href="#-brand-manifesto">Manifesto</a>
+    <a href="#-project-structure">Structure</a>
   </p>
 
   <br />
@@ -29,6 +32,8 @@
 ---
 
 ## 📌 Executive Summary
+
+🌐 **Live Deployment**: [https://dnathrift.vercel.app](https://dnathrift.vercel.app)
 
 **DNA Thrift** is a premier e-commerce application built for Pakistan's evolving streetwear and thrift culture. Based in Lahore, DNA Thrift directly curates and restores authentic, globally sourced footwear and vintage apparel—offering high-end streetwear grails without high retail price tags.
 

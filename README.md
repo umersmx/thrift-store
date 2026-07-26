@@ -1,103 +1,166 @@
-# DNA THRIFT — Streetwear. Redefining.
+<div align="center">
 
-> **DNA Thrift** is an independent, premium streetwear & authentic thrifted footwear e-commerce platform based in Lahore, Pakistan. Built with modern web technologies, editorial design principles, 3D interactive hero showcases, and smooth GSAP micro-animations.
+  <h1>👟 DNA THRIFT — Streetwear. Redefining.</h1>
+
+  <p>
+    <b>An ultra-modern, high-performance e-commerce platform for authentic thrifted streetwear and limited-drop sneakers.</b>
+  </p>
+
+  <p>
+    <a href="https://nextjs.org"><img src="https://img.shields.io/badge/Next.js-16.2-black?style=for-the-badge&logo=next.js" alt="Next.js 16" /></a>
+    <a href="https://react.dev"><img src="https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19" /></a>
+    <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind_CSS-v4.0-06B6D4?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS v4" /></a>
+    <a href="https://www.typescriptlang.org"><img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript" alt="TypeScript" /></a>
+    <a href="https://gsap.com"><img src="https://img.shields.io/badge/GSAP-Animations-88CE02?style=for-the-badge&logo=greensock" alt="GSAP" /></a>
+  </p>
+
+  <p>
+    <a href="#-getting-started">Getting Started</a> •
+    <a href="#-key-features">Features</a> •
+    <a href="#-tech-stack">Tech Stack</a> •
+    <a href="#-project-structure">Structure</a> •
+    <a href="#-brand-manifesto">Manifesto</a>
+  </p>
+
+  <br />
+
+</div>
 
 ---
 
-## 🌟 Key Highlights
+## 📌 Executive Summary
 
-- **3D Interactive Hero Experience**: Feature container with dynamic 3D camera perspectives, floating glassmorphism badges, and smooth video sync.
-- **Interactive Stacked Product Carousel**: Custom stacked card carousel with perspective depth, active blur effects, and real-time variant selections (sizes & colorways).
-- **Infinite Brand Marquee**: Continuous rolling marquee showcasing top global footwear & streetwear labels.
-- **Bento Grid Category Showcase**: High-impact visual layout for browsing curated drops (Outerwear, Activewear, Footwear, Clearance).
-- **Transparent Storytelling & About Page**: Comprehensive brand manifesto detailing global sourcing, authentication processes, circular economy sustainability, and nationwide logistics.
-- **Modern Responsive Design**: Editorial typography hierarchy with full screen-width consistency across mobile, tablet, and ultra-wide displays.
+**DNA Thrift** is a premier e-commerce application built for Pakistan's evolving streetwear and thrift culture. Based in Lahore, DNA Thrift directly curates and restores authentic, globally sourced footwear and vintage apparel—offering high-end streetwear grails without high retail price tags.
+
+The web application is designed with **editorial visual excellence**, featuring **3D camera perspective transformations**, **interactive stacked product carousels**, **glassmorphism UI overlays**, and **smooth GSAP micro-animations**.
 
 ---
 
-## 🛠️ Technology Stack
+## ✨ Key Features
 
-| Layer | Technology |
+| Feature | Description |
 | :--- | :--- |
-| **Framework** | [Next.js 16 (App Router)](https://nextjs.org/) |
-| **UI Library** | [React 19](https://react.dev/) |
-| **Language** | [TypeScript](https://www.typescriptlang.org/) |
-| **Styling** | [Tailwind CSS v4](https://tailwindcss.com/) |
-| **Animations** | [GSAP (GreenSock)](https://gsap.com/) & ScrollTrigger |
-| **Icons** | [Lucide React](https://lucide.dev/) |
-| **Font** | [Inter (Google Fonts)](https://fonts.google.com/specimen/Inter) |
+| **🎮 3D Interactive Hero** | Dynamic low-angle camera perspective card with live video playback, lens flare glints, and floating glassmorphism metadata cards. |
+| **🎴 Stacked 3D Carousel** | Interactive product stack with real-time depth scaling, backdrop blur effects, size selectors (US 7-12), and colorway pickers. |
+| **⚡ Infinite Rolling Marquee** | Smooth continuous brand marquee spotlighting global labels (*Nike, Jordan, Yeezy, Salomon, Off-White, Asics*). |
+| **🧩 Bento Category Grid** | Asymmetrical, high-impact visual grid showcasing curated categories (*Outerwear, Activewear, Footwear, Clearance*). |
+| **📜 Editorial Storytelling** | Full dedicated **About Us** experience detailing global sourcing hubs (China, Europe), independent authentication, and nationwide delivery. |
+| **📱 Responsive Precision** | Fully fluid typography hierarchy adhering to standard container breakpoints (`max-w-7xl`). |
 
 ---
 
-## 📁 Project Structure
+## 🛠️ Tech Stack & Architecture
+
+```
+Front-End Framework  : Next.js 16 (App Router)
+UI Runtime           : React 19
+Styling Engine       : Tailwind CSS v4 (@import "tailwindcss")
+Animation Library    : GSAP 3.x (GreenSock) & ScrollTrigger
+Iconography          : Lucide React Icons
+Type System          : TypeScript 5
+Font System          : Inter Variable (Google Fonts via next/font)
+```
+
+---
+
+## 📁 Repository Structure
 
 ```text
 drift-store/
-├── public/                  # Static assets & hero media
-│   ├── cat-skate.mp4        # Interactive hero video loop
-│   └── images/              # Curated product images & editorial assets
-├── src/
-│   ├── app/                 # Next.js App Router pages
-│   │   ├── about/           # Brand narrative & contact page
-│   │   ├── globals.css      # Design tokens, keyframes & Tailwind imports
-│   │   ├── layout.tsx       # Root layout wrapper
-│   │   └── page.tsx         # Homepage composition
-│   ├── components/          # Reusable UI components
-│   │   ├── Navbar.tsx       # Fixed header navigation
-│   │   ├── Hero.tsx         # 3D animated hero section
-│   │   ├── ProductShowcase.tsx # Stacked product carousel
-│   │   ├── PopularPicks.tsx # Horizontal scrolling product list
-│   │   ├── NewArrivals.tsx  # Grid showcase
-│   │   ├── Categories.tsx   # Bento grid categories
-│   │   ├── IdentityMarquee.tsx # Editorial brand manifesto & marquee
-│   │   ├── FeaturedProduct.tsx # Product spotlight widget
-│   │   ├── Testimonials.tsx # Community reviews & trust badges
-│   │   └── Footer.tsx       # Overlapping brand footer
-│   └── hooks/               # Custom React hooks (scroll animations)
+├── 📁 public/                     # Static media & editorial assets
+│   ├── 🎥 cat-skate.mp4           # HD 3D skateboarding hero video loop
+│   └── 🖼️ images/                 # Transparent PNG product & model assets
+├── 📁 src/
+│   ├── 📁 app/                    # Next.js App Router configuration
+│   │   ├── 📁 about/             # Brand story, mission, & location page
+│   │   ├── 🎨 globals.css         # CSS design tokens, keyframes & Tailwind imports
+│   │   ├── 📄 layout.tsx          # Root layout shell with font variables & nav
+│   │   └── 📄 page.tsx            # Main store homepage composition
+│   ├── 📁 components/             # Reusable UI component library
+│   │   ├── 🧩 Navbar.tsx          # Glassmorphic header with navigation & cart badge
+│   │   ├── 🧩 Hero.tsx            # 3D interactive hero with GSAP timelines
+│   │   ├── 🧩 ProductShowcase.tsx # Stacked 3D product carousel component
+│   │   ├── 🧩 PopularPicks.tsx    # Horizontal scrollable product catalog
+│   │   ├── 🧩 NewArrivals.tsx     # 4-column product grid with condition badges
+│   │   ├── 🧩 Categories.tsx      # Bento grid category showcase
+│   │   ├── 🧩 IdentityMarquee.tsx # Editorial brand manifesto & rolling logo ribbon
+│   │   ├── 🧩 FeaturedProduct.tsx # Product spotlight with dropdown attribute selectors
+│   │   ├── 🧩 Testimonials.tsx    # Community reviews & trust badge integration
+│   │   └── 🧩 Footer.tsx         # Overlapping dark footer with floating shoe cards
+│   └── 📁 hooks/                  # Custom React hooks
+│       └── ⚓ useScrollAnimation.ts # GSAP scroll-triggered entrance animations
+└── 📄 package.json
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Node.js 18.x or higher
-- npm / yarn / pnpm
+### 1. Prerequisites
+Ensure you have **Node.js 18.x** or higher installed:
 
-### Installation
+```bash
+node -v
+# v18.x.x or higher
+```
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/YOUR_GITHUB_USERNAME/thrift-store.git
-   cd thrift-store
-   ```
+### 2. Installation
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+Clone the repository and install dependencies:
 
-3. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
+```bash
+# Clone repository
+git clone https://github.com/umersmx/thrift-store.git
 
-4. **Open in browser**:
-   Navigate to [http://localhost:3000](http://localhost:3000)
+# Navigate into project directory
+cd thrift-store
+
+# Install node packages
+npm install
+```
+
+### 3. Development Server
+
+Run the local development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
 ---
 
-## ⚡ Production Build
+## ⚡ Production Deployment
 
-To test or generate the production build:
+To generate an optimized production build:
 
 ```bash
+# Build production bundle
 npm run build
+
+# Start production server
 npm run start
 ```
 
+### Deploy on Vercel
+This application is fully optimized for **Vercel**:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/umersmx/thrift-store)
+
 ---
 
-## 📜 License
+## 🍃 Sustainability & Authentication
 
-Distributed under the MIT License. See `LICENSE` for more information.
+> **Circular Economy Commitment**: By sourcing globally and curating gently-used footwear, DNA Thrift actively diverts quality shoes from landfills while reducing reliance on fast-fashion manufacturing. Every pair is thoroughly inspected, cleaned, sanitized, and verified before delivery across Pakistan.
+
+---
+
+## 📄 License
+
+This project is open-source under the **MIT License**. See the [LICENSE](LICENSE) file for complete details.
+
+<div align="center">
+  <br />
+  <p>© 2026 <b>DNA Thrift</b>. All Rights Reserved.</p>
+</div>
